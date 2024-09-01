@@ -1,0 +1,54 @@
+.NavbarItems{
+    background-color: rgb(233, 233, 233);
+    display:flex;
+    justify-content: center ;
+    align-items: center;
+    box-shadow: 0 0 5px 0 rgb(69, 69, 69);
+    width:100%;
+    height:65px;
+    margin:0 auto;
+}
+.NavbarLogo{
+    color:#222;
+    font-size: 1.5rem;
+    padding-right:100px;
+    margin:0;
+}
+.NavMenu{
+    display: flex;
+    flex-direction: row; 
+    list-style:none ;
+    gap:0.8rem;
+    margin:0;
+}
+.NavLinks{
+    text-decoration: none;
+    color: #222;
+    font-size:1rem;
+    font-weight: 600;
+    padding: 0.5rem;
+}
+
+.NavLinks i{
+    padding-right:6px;
+    font-size: 1rem;
+}
+.NavLinks p{
+    padding: 0.5rem;
+    margin:0;
+}
+.NavLinks p:hover{
+    background-color: rgb(197, 199, 201);
+    border: 1px solid rgb(197, 199, 201);
+    border-radius: 20px;
+}
+ .count{
+    background-color: black;
+    font-size: 0.8rem;
+    color: #fff;
+    text-align: center;
+    margin-left:0.2rem;
+    padding: 5px;
+    border: 1px solid rgb(74, 74, 74);
+    border-radius:5px;
+ }

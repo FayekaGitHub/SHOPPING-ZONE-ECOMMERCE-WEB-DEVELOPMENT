@@ -1,0 +1,356 @@
+* {
+  scrollbar-width: thin; 
+  scrollbar-color: #ffffff #7b7b7b; 
+}
+.heading{
+    text-align: center;
+    margin:4rem;
+    font-size: 4rem;
+}
+.product{
+       display:flex;
+       background-color:rgb(255, 255, 255);
+       gap:0.5rem;
+       flex-direction: column;
+       width:14rem;
+       height:16rem;
+       margin:15px;
+       padding:0.5rem;
+       font-size: 0.80rem;
+       border: 0.05rem solid rgb(130, 130, 130);
+       border-radius: 2%;
+  }
+    
+  .price {
+      color: rgb(0, 0, 0);
+      font-size: 18px;
+      margin:0 auto;
+    }
+    
+    .productsdesign {
+      display: flex;
+      flex-wrap: wrap; 
+      justify-items: space-evenly;
+      margin:0px 70px 0px 70px;
+      height:65vh;
+      overflow-y: scroll;
+  }
+
+  .categoriesdesign {
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto 10px auto;
+    height:78vh;
+    padding:20px;
+    flex-wrap: wrap;
+    background-color: rgb(255, 255, 255);
+}
+
+.category{
+    background-color:rgb(204, 204, 204);
+    margin:0.5rem;
+    padding:10px 2px 10px 2px ;
+    font-size: 1rem;
+    text-align: center;
+    border: 0.01rem solid rgb(160, 158, 158);
+    border-radius: 2%;
+}
+.CategoryLink{
+  text-decoration: none;
+  color: #000;
+}
+.category :hover{
+  font-weight: bold;
+}
+
+.addbutton {
+  border: none;
+  padding: 5px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 13px;
+  border-radius: 20px;
+}
+
+.addbutton:hover{
+    border: 1px solid rgb(198, 198, 198);
+    background-color:rgb(255, 255, 255);
+    color: #338a20;
+    font-weight: 600;
+  
+}
+.deletebutton:hover{
+  background-color:rgb(255, 255, 255);
+  color: #ca3939;
+  font-weight: 600;
+}
+.deletebutton{
+  padding: 5px;
+  color: rgb(0, 0, 0);
+  background-color: #fffdfd;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 13px;
+  border-radius: 20px;
+  border: 1px solid rgb(168, 168, 168);
+}
+.viewbutton:hover{
+  background-color:rgb(135, 130, 130);
+  color: #000000;
+  font-weight: 600;
+}
+.viewbutton{
+  border: 1px solid rgb(200, 199, 199);
+  outline: 0;
+  padding: 5px;
+  color: rgb(0, 0, 0);
+  background-color: #d6d5d5;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 13px;
+  border-radius: 20px;
+}
+button{
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.ViewProduct{
+  display: flex;
+  gap:0.2rem;
+  flex-direction: column;
+  font-size: 0.8rem;
+}
+.ViewProduct img{
+  align-self: center;
+}
+
+.CloseButton{
+  display: flex;
+  border: none;
+  background-color: #fffdfd;
+}
+
+.CloseButton :hover{
+  color: #ca3939;
+}
+.dialog-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; 
+  height: 100%; 
+  background-color: rgba(0, 0, 0, 0.5); 
+  z-index: 999; 
+}
+
+.dialog {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  z-index: 1000; 
+}
+
+
+.BackButton{
+  font-size: 1.5rem;
+  float: left;
+  margin:1.5rem 1rem 1rem 4rem;
+  color: #363636;
+}
+.BackButton:hover{
+  color: #363636;
+}
+.searchBox{
+  width:12rem;
+  height:1rem;
+  display: flex;
+  align-self: center;
+}
+.TopBar{
+  display:flex;
+  flex-direction:row;
+  margin: 2rem;
+}
+.my-select {
+  display: "flex";
+  align-self: "center";
+  font-family: Arial, sans-serif;
+  font-size: 0.75rem;
+  margin:12px;
+  color: #333;
+  font-weight: bold;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+
+.input-container {
+  display: flex;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.icon {
+  padding: 10px;
+  background: rgb(94, 103, 113);
+  color: white;
+  min-width: 50px;
+  text-align: center;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+}
+
+.input-field:focus {
+  border: 2px solid rgb(114, 184, 255);
+}
+
+
+.btn {
+  background-color: rgb(52, 63, 74);
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity:0.5;
+}
+
+.productCount {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100px;
+  margin: 0 auto;
+  border: 2px solid #aaaaaa;
+  border-radius: 5px;
+  padding: 2px;
+}
+
+.countButton {
+  background-color: #ccc;
+  color: #000000;
+  border: none;
+  font-size: 12px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.countDisplay {
+  font-size: 0.75rem;
+  font-weight: bold;
+  width: 20px;
+  text-align: center;
+}
+.buttonstyle{
+  background-color:rgb(198, 194, 194);
+  font-size: 1rem;
+  font-weight: 600;
+  padding:10px;
+  border-radius: 4px;
+  border: none;
+  text-decoration: none;
+}
+.charge h4{
+margin:0;
+font-weight: normal;
+} 
+.charge{
+  display: flex;
+  justify-content: space-between;
+}
+.billstyle{
+  display:flex;
+  border: 1px solid gray;
+  box-shadow: 1px 1px 1px 1px gray;
+  gap:0.25rem;
+  flex-direction: column;
+  margin:20px;
+  width: 100%;
+  padding:30px;
+  gap:1rem;
+  border-radius: 2%;
+}
+.cartproducts{
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    width:50%;
+    overflow-y: scroll;
+    height: 60vh;
+    border: 1px solid gray;
+    border-radius: 2%;
+    box-shadow: 1px 1px 1px 1px gray;
+    padding: 10px;
+    margin: 20px;
+}
+.cproduct{
+  display:flex;
+  background-color:rgb(255, 255, 255);
+  gap:0.25rem;
+  flex-direction: column;
+  width:12rem;
+  height:15rem;
+  margin:10px;
+  justify-content: center;
+  align-items: center;
+  padding:0px 10px 20px 10px;
+  font-size: 0.8rem;
+  border: 0.05rem solid rgb(130, 130, 130);
+  border-radius: 2%;
+}
+.main{
+  display:flex;
+  justify-content: center;
+  height:60vh;
+  width: 50%;
+}
+.orders{
+  border: 2px solid black;
+  box-shadow: 1px 1px 1px 1px solid gray;
+  border-radius: 20px;
+  display:flex;
+  height:70%;
+  width:45%;
+}
+
+.rowOrder p{
+  margin: 5px;
+  font-size: 12px;
+}
+ .login{
+  margin:1rem;
+  color: #333;
+ }
+ .login:hover{
+  color: #000000;
+  font-size: 1.2rem;
+  margin:1rem;
+ }
+.profile{
+  margin:3rem 22rem 3rem 22rem;
+  height:20rem;
+  width:50rem;
+  background-color:lightgray;
+  border-radius:30px;
+  border:2px solid lightgray;
+}
